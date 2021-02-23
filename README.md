@@ -8,4 +8,4 @@ requests unlike his where Retrofit was used.
 I did this because most of the projects/examples out there that explain network requests with 
 RxJava/RxAndroid usually make use of Retrofit for requests.
 
-You can find his example with Retrofit [here](https://github.com/arriolac/GitHubRxJava).
+You can find his example with Retrofit [here](https://github.com/arriolac/GitHubRxJava) and his tutorial [here](https://www.toptal.com/android/functional-reactive-android-rxjava).
