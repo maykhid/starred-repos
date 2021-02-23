@@ -59,7 +59,7 @@ public class GitHubRepoAdapter extends BaseAdapter {
         Type type = new TypeToken<List<GitHubRepo>>(){}.getType();
         List<GitHubRepo> gitList = gson.fromJson(repos, type);
         for (GitHubRepo repo : gitList){
-            Log.i("Favorite Details", repo.id + "-" + repo.stargazersCount + "-" + repo.description);
+            Log.i("Favorite Details", repo.id + "-" + repo.stargazers_count + "-" + repo.description);
         }
         gitHubRepos = gitList;
         notifyDataSetChanged();
@@ -91,7 +91,7 @@ public class GitHubRepoAdapter extends BaseAdapter {
             textRepoName.setText(gitHubRepo.name);
             textRepoDescription.setText(gitHubRepo.description);
             textLanguage.setText("Language: " + gitHubRepo.language);
-            textStars.setText("Stars: " + gitHubRepo.stargazersCount);
+            textStars.setText("Stars: " + gitHubRepo.stargazers_count);
         }
     }
 
